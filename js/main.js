@@ -1,20 +1,6 @@
 'usestrict'
-const searcEl = document.querySelector('.search');
-const searchInputEl = searcEl.querySelector('input');
 
-searcEl.addEventListener('click', function () {
-  searchInputEl.focus();
-});
 
-searchInputEl.addEventListener('focus', function () {
-  searcEl.classList.add('focused');
-  searchInputEl.setAttribute('placeholder', '통합검색');
-})
-
-searchInputEl.addEventListener('blur', function () {
-  searcEl.classList.remove('focused');
-  searchInputEl.removeAttribute('placeholder');
-})
 
 /**
  * 페이지 스크롤에 따른 요소 제어
@@ -171,6 +157,3 @@ spyEls.forEach(function (spyEl) {
     .addTo(new ScrollMagic.Controller()) // 컨트롤러에 장면을 할당(필수!)
 })
 
-
-const thisYear = document.querySelector('.this-year');
-thisYear.textContent = new Date().getFullYear();
