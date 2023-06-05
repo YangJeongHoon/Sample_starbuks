@@ -39,7 +39,6 @@ window.addEventListener('scroll', _.throttle(function () {
 
     });
 
-    // 페이지 스크롤 위치가 500px이 넘지 않으면.
   } else {
     // Badge 요소 보이기!
     gsap.to(badgeEl, .6, {
@@ -59,8 +58,8 @@ toTopEl.addEventListener('click', function () {
   // 페이지 위치를 최상단으로 부드럽게(0.7초 동안) 이동.
   gsap.to(window, .7, {
     scrollTo: 0
-  })
-})
+  });
+});
 
 
 
